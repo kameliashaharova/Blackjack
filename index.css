@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "Retro Signed";
+    src: url("font/RetroSigned-DYYY0.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Royal Flush";
+    src: url("font/RoyalFlushRegular-Dev1.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Joker";
+    src: url("font/JqkasWild-w1YD6.ttf") format("truetype");
+}
+
+body {
+    background-image: url("images/green-textile-texture.jpg");
+    background-size: cover;      /* or "contain" */
+    background-repeat: no-repeat;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+#header-decor {
+    font-family: "Royal Flush", sans-serif;
+    font-size: 4rem;
+    font-weight: lighter;
+    color: rgb(0, 0, 0);
+    letter-spacing: 1.5rem;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 100vh;
+    margin: 0 auto;
+    font-weight: 100;
+}
+
+h1 {
+    color: white;
+    font-family: "Retro Signed",sans-serif;
+    margin-bottom: 0;
+    font-size: clamp(6.5rem, 13vw, 20rem);
+}
+
+#message-el{
+    color: rgb(247, 177, 0);
+    font-family: "Joker", sans-serif;
+    font-size: clamp(2rem, 3.5vw, 17rem);
+    margin: 0 auto;
+}
+
+p {
+    color: white;
+    font-family: "Joker", sans-serif;
+    font-size: clamp(1rem, 3vw, 2rem);
+    margin: 0 auto;
+}
+
+.btn {
+    color: #016f32;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px 0px;
+    background-color: rgb(247, 177, 0);
+    width: 200px;
+    margin-top: 3rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 10px rgba(247, 177, 0, 0);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(226, 165, 10);
+    transform: scale(1.02);
+}
+
+.status-bar {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.394);
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    display: flex;
+    width: 100vw;
+    padding: .75rem 1rem;
+    justify-content: space-evenly;
+    margin: 2rem 0 0 0;
+  }
+
+.status-bar p {
+    margin: 0 2rem;
+    padding: 0 3rem;
+}
